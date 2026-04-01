@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lenna Jasuja — Brand & Creative Marketing Leader</title>
-  <meta name="description" content="Lenna Jasuja is a brand and creative marketing executive with Fortune 100 experience spanning healthcare, CPG, and durable goods.">
+  <title>Lenna Conley Jasuja — Brand Marketing & Creative Leader</title>
+  <meta name="description" content="Lenna Conley Jasuja is a brand marketing and creative leader with Fortune 100 experience spanning healthcare, CPG, and durable goods.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -126,9 +126,7 @@
       gap: 4rem;
     }
 
-    .hero-text {
-      flex: 1.2;
-    }
+    .hero-text { flex: 1.2; }
 
     .hero-text h1 {
       font-family: 'Cormorant Garamond', serif;
@@ -148,7 +146,7 @@
       font-size: 1.15rem;
       color: var(--charcoal-light);
       margin-bottom: 2rem;
-      max-width: 520px;
+      max-width: 540px;
       font-weight: 300;
       line-height: 1.8;
     }
@@ -205,9 +203,7 @@
     }
 
     /* SECTION FOUNDATIONS */
-    section {
-      padding: 6rem 2.5rem;
-    }
+    section { padding: 6rem 2.5rem; }
 
     .section-inner {
       max-width: 1000px;
@@ -233,9 +229,7 @@
     }
 
     /* ABOUT */
-    .about {
-      background: var(--warm-white);
-    }
+    .about { background: var(--warm-white); }
 
     .about-grid {
       display: grid;
@@ -250,9 +244,7 @@
       line-height: 1.85;
     }
 
-    .about-grid p + p {
-      margin-top: 1rem;
-    }
+    .about-grid p + p { margin-top: 1rem; }
 
     .about-cta {
       margin-top: 2.5rem;
@@ -275,94 +267,11 @@
       transition: border-color 0.3s, color 0.3s;
     }
 
-    .about-cta a:hover {
-      border-color: var(--terracotta);
-    }
-
-    .about-cta a svg {
-      width: 14px;
-      height: 14px;
-    }
-
-    /* CAREER TIMELINE */
-    .career {
-      background: var(--ivory);
-    }
-
-    .timeline {
-      position: relative;
-      margin-top: 3rem;
-    }
-
-    .timeline::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      width: 2px;
-      background: linear-gradient(to bottom, var(--terracotta-pale), var(--warm-gray-light));
-    }
-
-    .timeline-item {
-      position: relative;
-      padding-left: 3rem;
-      padding-bottom: 3rem;
-    }
-
-    .timeline-item:last-child { padding-bottom: 0; }
-
-    .timeline-item::before {
-      content: '';
-      position: absolute;
-      left: -5px;
-      top: 6px;
-      width: 12px;
-      height: 12px;
-      border-radius: 50%;
-      background: var(--ivory);
-      border: 2.5px solid var(--terracotta);
-    }
-
-    .timeline-item.highlight::before {
-      background: var(--terracotta);
-    }
-
-    .timeline-years {
-      font-size: 0.78rem;
-      font-weight: 500;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--warm-gray);
-      margin-bottom: 0.35rem;
-    }
-
-    .timeline-company {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.45rem;
-      font-weight: 500;
-      color: var(--charcoal);
-      margin-bottom: 0.2rem;
-    }
-
-    .timeline-role {
-      font-size: 0.92rem;
-      font-weight: 400;
-      color: var(--terracotta);
-      margin-bottom: 0.6rem;
-    }
-
-    .timeline-desc {
-      font-size: 0.92rem;
-      color: var(--charcoal-light);
-      line-height: 1.75;
-      max-width: 600px;
-    }
+    .about-cta a:hover { border-color: var(--terracotta); }
+    .about-cta a svg { width: 14px; height: 14px; }
 
     /* WORK / SHOWREELS */
-    .work {
-      background: var(--warm-white);
-    }
+    .work { background: var(--ivory); }
 
     .work-grid {
       display: grid;
@@ -372,7 +281,7 @@
     }
 
     .work-card {
-      background: var(--ivory);
+      background: var(--warm-white);
       border-radius: 10px;
       overflow: hidden;
       transition: transform 0.3s, box-shadow 0.3s;
@@ -409,9 +318,7 @@
       transition: transform 0.3s;
     }
 
-    .work-card:hover .play-btn {
-      transform: scale(1.1);
-    }
+    .work-card:hover .play-btn { transform: scale(1.1); }
 
     .work-card-visual .play-btn svg {
       width: 20px;
@@ -420,31 +327,7 @@
       margin-left: 3px;
     }
 
-    .work-card-visual .bg-pattern {
-      position: absolute;
-      inset: 0;
-      z-index: 1;
-    }
-
-    .card-coh .bg-pattern {
-      background: linear-gradient(135deg, #3B5998, #5B7FB5, #4A7C9B);
-    }
-
-    .card-ctca .bg-pattern {
-      background: linear-gradient(135deg, #2E6B4F, #4A8C6E, #3D7A5E);
-    }
-
-    .card-newell .bg-pattern {
-      background: linear-gradient(135deg, #8B4B6E, #A86B8A, #9D5C7D);
-    }
-
-    .card-hollywood .bg-pattern {
-      background: linear-gradient(135deg, #4A3B2E, #6B5A4A, #5C4B3C);
-    }
-
-    .work-card-body {
-      padding: 1.5rem;
-    }
+    .work-card-body { padding: 1.5rem; }
 
     .work-card-body h3 {
       font-family: 'Cormorant Garamond', serif;
@@ -482,7 +365,6 @@
     }
 
     .work-card-link:hover { gap: 0.7rem; }
-
     .work-card-link svg { width: 14px; height: 14px; }
 
     /* IMPACT NUMBERS */
@@ -523,6 +405,42 @@
       line-height: 1.5;
     }
 
+    /* CAREER LOGOS */
+    .career {
+      background: var(--warm-white);
+      padding: 5rem 2.5rem;
+    }
+
+    .career .section-inner { text-align: center; }
+
+    .logo-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem 4rem;
+      margin-top: 2.5rem;
+    }
+
+    .logo-bar .company-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.35rem;
+      font-weight: 500;
+      color: var(--charcoal);
+      opacity: 0.55;
+      transition: opacity 0.3s;
+      white-space: nowrap;
+    }
+
+    .logo-bar .company-logo:hover { opacity: 1; }
+
+    .logo-bar .logo-divider {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: var(--warm-gray-light);
+    }
+
     /* CONTACT / FOOTER */
     footer {
       background: var(--ivory);
@@ -535,9 +453,7 @@
       text-align: center;
     }
 
-    .footer-inner .section-heading {
-      margin-bottom: 1rem;
-    }
+    .footer-inner .section-heading { margin-bottom: 1rem; }
 
     .footer-inner .footer-note {
       font-size: 1rem;
@@ -576,10 +492,7 @@
       color: white;
     }
 
-    .footer-links a svg {
-      width: 16px;
-      height: 16px;
-    }
+    .footer-links a svg { width: 16px; height: 16px; }
 
     .copyright {
       font-size: 0.78rem;
@@ -609,23 +522,11 @@
         gap: 2.5rem;
         min-height: auto;
       }
-
-      .hero-photo .photo-frame {
-        width: 240px;
-        height: 300px;
-      }
-
-      .about-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .work-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .impact-grid {
-        grid-template-columns: 1fr 1fr;
-      }
+      .hero-photo .photo-frame { width: 240px; height: 300px; }
+      .about-grid { grid-template-columns: 1fr; }
+      .work-grid { grid-template-columns: 1fr; }
+      .impact-grid { grid-template-columns: 1fr 1fr; }
+      .logo-bar { gap: 2rem 3rem; }
     }
 
     @media (max-width: 600px) {
@@ -643,21 +544,15 @@
         gap: 1.2rem;
         box-shadow: 0 8px 30px rgba(44, 40, 36, 0.08);
       }
-
       .hamburger { display: flex; }
-
       section { padding: 4rem 1.5rem; }
-
       .hero { padding: 6rem 1.5rem 3rem; }
-
-      .impact-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-      }
-
+      .impact-grid { grid-template-columns: 1fr 1fr; gap: 1rem; }
       .impact-stat .number { font-size: 2.2rem; }
-
       .footer-links { flex-direction: column; align-items: center; }
+      .logo-bar { gap: 1.5rem 2rem; }
+      .logo-bar .company-logo { font-size: 1.15rem; }
+      .logo-bar .logo-divider { display: none; }
     }
   </style>
 </head>
@@ -665,14 +560,14 @@
 
   <!-- NAV -->
   <nav id="nav">
-    <a href="#" class="logo">Lenna Jasuja</a>
+    <a href="#" class="logo">Lenna Conley Jasuja</a>
     <button class="hamburger" onclick="document.querySelector('nav ul').classList.toggle('open')" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
     <ul>
       <li><a href="#about">About</a></li>
-      <li><a href="#career">Career</a></li>
       <li><a href="#work">Work</a></li>
+      <li><a href="#career">Career</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -681,19 +576,19 @@
   <section class="hero">
     <div class="hero-text fade-in">
       <h1>Building brands<br>that <em>move</em> people</h1>
-      <p class="tagline">I'm Lenna Jasuja — a brand and creative marketing executive who combines Fortune 100 discipline with purpose-driven storytelling. I lead teams that turn complex value into campaigns people actually feel.</p>
+      <p class="tagline">I'm Lenna Conley Jasuja — a brand marketing and creative leader who combines Fortune 100 discipline with purpose-driven storytelling. I build teams that turn complex value into campaigns people actually feel while delivering measurable growth.</p>
       <div class="hero-brands">
         <span>City of Hope</span>
         <span>CTCA</span>
         <span>Newell Brands</span>
         <span>Unilever</span>
-        <span>Procter & Gamble</span>
+        <span>Procter &amp; Gamble</span>
         <span>Kraft General Foods</span>
       </div>
     </div>
     <div class="hero-photo fade-in">
       <div class="photo-frame">
-        <img src="images/headshot.jpg" alt="Lenna Jasuja" loading="eager">
+        <img src="images/headshot.jpg" alt="Lenna Conley Jasuja" loading="eager">
       </div>
     </div>
   </section>
@@ -705,12 +600,11 @@
       <h2 class="section-heading">Strategy meets storytelling</h2>
       <div class="about-grid">
         <div>
-          <p>I'm a cross-disciplined marketing leader with a track record of building and elevating brands at the intersection of strategy, creativity, and purpose. Leading brand strategy in oncology sharpened my ability to market with both rigor and empathy — translating complex clinical value into narratives that move patients to act.</p>
+          <p>I'm a cross-disciplined marketer with a track record of building and elevating brands at the intersection of strategy, creativity, and purpose. Leading brand strategy in oncology sharpened my ability to market with both rigor and empathy — translating complex clinical value into narratives that move patients to act.</p>
           <p>At City of Hope, a top-10 NCI-designated cancer system, I led enterprise brand marketing and creative across 40+ locations, unifying City of Hope and Cancer Treatment Centers of America into a national brand post-acquisition.</p>
         </div>
         <div>
-          <p>Before healthcare, I spent nearly two decades in CPG at Newell Brands, leading marketing for Crock-Pot, Mr. Coffee, Calphalon, and Oster — launching over 100 products and driving both retail and DTC growth. My career began in brand activation at Procter & Gamble and Unilever, where I built the discipline of consumer-led, data-driven marketing.</p>
-          <p>Beyond corporate roles, I serve as a marketing advisor to Ukraine's Forgotten Orphan Relief Organization and sit on the advisory board of MESARA, a Turkish art brand.</p>
+          <p>Before healthcare, I spent nearly two decades in CPG at Newell Brands, leading marketing for Crock-Pot, Mr. Coffee, Calphalon, and Oster — launching over 100 products and driving both retail and DTC growth. My career began in brand activation at Procter &amp; Gamble and Unilever, where I built the discipline of consumer-led, data-driven marketing.</p>
           <div class="about-cta">
             <a href="https://www.linkedin.com/in/lennaconley/" target="_blank" rel="noopener">
               LinkedIn
@@ -722,40 +616,46 @@
     </div>
   </section>
 
-  <!-- CAREER -->
-  <section class="career" id="career">
+  <!-- WORK -->
+  <section class="work" id="work">
     <div class="section-inner fade-in">
-      <span class="section-label">Career</span>
-      <h2 class="section-heading">A path through building</h2>
-      <div class="timeline">
+      <span class="section-label">Campaign Work</span>
+      <h2 class="section-heading">Selected creative</h2>
+      <div class="work-grid">
 
-        <div class="timeline-item highlight">
-          <div class="timeline-years">2023 – 2025</div>
-          <div class="timeline-company">City of Hope Cancer System</div>
-          <div class="timeline-role">VP, Enterprise Brand Marketing & Creative</div>
-          <div class="timeline-desc">Led brand strategy, campaigns, content, and SEO/GEO marketing for a top-10 NCI-designated cancer system. Built and scaled a 28-FTE operation producing 6,000+ projects annually. Drove the post-acquisition brand unification with CTCA.</div>
-        </div>
+        <a href="https://michaelharkins.slateapp.com/showreel/view/5ec831bbeb48d" target="_blank" rel="noopener" class="work-card" style="text-decoration:none; color:inherit;">
+          <div class="work-card-visual">
+            <img src="images/showreel-harkins.png" alt="City of Hope campaign still" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;">
+            <div class="overlay">
+              <div class="play-btn">
+                <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"></polygon></svg>
+              </div>
+            </div>
+          </div>
+          <div class="work-card-body">
+            <div class="card-role">Director's Reel — Michael Harkins</div>
+            <h3>City of Hope &amp; CTCA Campaigns</h3>
+            <p>National TV spots including "Hope Is Here," "One Call," and "Driven" — produced through the in-house Health Studios team.</p>
+            <span class="work-card-link">Watch reel <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span>
+          </div>
+        </a>
 
-        <div class="timeline-item highlight">
-          <div class="timeline-years">2018 – 2023</div>
-          <div class="timeline-company">Cancer Treatment Centers of America</div>
-          <div class="timeline-role">VP, Brand Marketing & Creative</div>
-          <div class="timeline-desc">Founded CTCA Health Studios, a full-service in-house creative agency. Led the award-winning "One Call" and "Cancer Won't Wait" campaigns — the latter becoming the highest-performing campaign in company history.</div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-years">2005 – 2018</div>
-          <div class="timeline-company">Newell Brands</div>
-          <div class="timeline-role">Director → Senior Global Consumer Intelligence Manager → Director, Brand Activation</div>
-          <div class="timeline-desc">Oversaw creative, media, PR, social, and digital marketing for Crock-Pot, Mr. Coffee, Sunbeam, and Oster. Established the internal consumer insights function and led brand repositioning across multiple categories.</div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-years">Earlier Career</div>
-          <div class="timeline-company">Unilever · Procter & Gamble · Kraft General Foods</div>
-          <div class="timeline-role">Director of Activation Development · Promotion Manager · Consumer Promotion</div>
-          <div class="timeline-desc">Managed $54M brand budgets at Unilever. Launched DayQuil LiquiCaps at P&G, exceeding targets by 30%. Led consumer research and co-marketing alliances for major food and health brands.</div>
-        </div>
+        <a href="https://www.matthamill.com/" target="_blank" rel="noopener" class="work-card" style="text-decoration:none; color:inherit;">
+          <div class="work-card-visual">
+            <img src="images/showreel-hamill.png" alt="Walk for Hope 2025" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;">
+            <div class="overlay">
+              <div class="play-btn">
+                <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"></polygon></svg>
+              </div>
+            </div>
+          </div>
+          <div class="work-card-body">
+            <div class="card-role">Producer/Editor — Matt Hamill</div>
+            <h3>City of Hope Brand Films</h3>
+            <p>"Driven," "This is City of Hope," patient stories, and Walk for Hope — editorial and documentary content produced in-house.</p>
+            <span class="work-card-link">View work <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span>
+          </div>
+        </a>
 
       </div>
     </div>
@@ -787,47 +687,23 @@
     </div>
   </section>
 
-  <!-- WORK -->
-  <section class="work" id="work">
+  <!-- CAREER -->
+  <section class="career" id="career">
     <div class="section-inner fade-in">
-      <span class="section-label">Campaign Work</span>
-      <h2 class="section-heading">Selected creative</h2>
-      <div class="work-grid">
-
-        <a href="https://michaelharkins.slateapp.com/showreel/view/5ec831bbeb48d" target="_blank" rel="noopener" class="work-card" style="text-decoration:none; color:inherit;">
-          <div class="work-card-visual card-coh">
-            <img src="images/showreel-harkins.png" alt="City of Hope campaign still" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;">
-            <div class="overlay">
-              <div class="play-btn">
-                <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"></polygon></svg>
-              </div>
-            </div>
-          </div>
-          <div class="work-card-body">
-            <div class="card-role">Director's Reel — Michael Harkins</div>
-            <h3>City of Hope & CTCA Campaigns</h3>
-            <p>National TV spots including "Hope Is Here," "One Call," and "Driven" — produced through the in-house Health Studios team.</p>
-            <span class="work-card-link">Watch reel <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span>
-          </div>
-        </a>
-
-        <a href="https://www.matthamill.com/" target="_blank" rel="noopener" class="work-card" style="text-decoration:none; color:inherit;">
-          <div class="work-card-visual card-ctca">
-            <img src="images/showreel-hamill.png" alt="Walk for Hope 2025" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;">
-            <div class="overlay">
-              <div class="play-btn">
-                <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"></polygon></svg>
-              </div>
-            </div>
-          </div>
-          <div class="work-card-body">
-            <div class="card-role">Producer/Editor — Matt Hamill</div>
-            <h3>City of Hope Brand Films</h3>
-            <p>"Driven," "This is City of Hope," patient stories, and Walk for Hope — editorial and documentary content produced in-house.</p>
-            <span class="work-card-link">View work <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span>
-          </div>
-        </a>
-
+      <span class="section-label">Career</span>
+      <h2 class="section-heading">Where I've built</h2>
+      <div class="logo-bar">
+        <span class="company-logo">City of Hope</span>
+        <span class="logo-divider"></span>
+        <span class="company-logo">Cancer Treatment Centers of America</span>
+        <span class="logo-divider"></span>
+        <span class="company-logo">Newell Brands</span>
+        <span class="logo-divider"></span>
+        <span class="company-logo">Unilever</span>
+        <span class="logo-divider"></span>
+        <span class="company-logo">Procter &amp; Gamble</span>
+        <span class="logo-divider"></span>
+        <span class="company-logo">Kraft General Foods</span>
       </div>
     </div>
   </section>
@@ -853,26 +729,23 @@
         </a>
       </div>
       <div class="copyright">
-        &copy; 2026 Lenna Jasuja. All rights reserved.
+        &copy; 2026 Lenna Conley Jasuja. All rights reserved.
       </div>
     </div>
   </footer>
 
   <script>
-    // Nav scroll effect
     const nav = document.getElementById('nav');
     window.addEventListener('scroll', () => {
       nav.classList.toggle('scrolled', window.scrollY > 40);
     });
 
-    // Close mobile menu on link click
     document.querySelectorAll('nav ul li a').forEach(link => {
       link.addEventListener('click', () => {
         document.querySelector('nav ul').classList.remove('open');
       });
     });
 
-    // Scroll fade-in
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
