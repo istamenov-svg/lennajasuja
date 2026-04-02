@@ -270,13 +270,13 @@
     .about-cta a:hover { border-color: var(--terracotta); }
     .about-cta a svg { width: 14px; height: 14px; }
 
-    /* WORK / SHOWREELS */
+    /* WORK / VIDEOS */
     .work { background: var(--ivory); }
 
     .work-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2.5rem;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
       margin-top: 2.5rem;
     }
 
@@ -293,9 +293,24 @@
     }
 
     .work-card-visual {
-      height: 200px;
+      aspect-ratio: 16 / 9;
       position: relative;
       overflow: hidden;
+      background: var(--charcoal);
+    }
+
+    .work-card-visual img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 1;
+      transition: transform 0.4s;
+    }
+
+    .work-card:hover .work-card-visual img {
+      transform: scale(1.05);
     }
 
     .work-card-visual .overlay {
@@ -305,11 +320,17 @@
       align-items: center;
       justify-content: center;
       z-index: 2;
+      background: rgba(0, 0, 0, 0.15);
+      transition: background 0.3s;
+    }
+
+    .work-card:hover .overlay {
+      background: rgba(0, 0, 0, 0.3);
     }
 
     .work-card-visual .play-btn {
-      width: 56px;
-      height: 56px;
+      width: 48px;
+      height: 48px;
       border-radius: 50%;
       background: rgba(255, 255, 255, 0.92);
       display: flex;
@@ -321,51 +342,20 @@
     .work-card:hover .play-btn { transform: scale(1.1); }
 
     .work-card-visual .play-btn svg {
-      width: 20px;
-      height: 20px;
+      width: 18px;
+      height: 18px;
       fill: var(--terracotta);
       margin-left: 3px;
     }
 
-    .work-card-body { padding: 1.5rem; }
-
-    .work-card-body h3 {
+    .work-card-caption {
+      padding: 1rem 1.2rem;
       font-family: 'Cormorant Garamond', serif;
-      font-size: 1.3rem;
+      font-size: 1.05rem;
       font-weight: 500;
-      margin-bottom: 0.4rem;
       color: var(--charcoal);
+      line-height: 1.4;
     }
-
-    .work-card-body .card-role {
-      font-size: 0.78rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--terracotta);
-      font-weight: 500;
-      margin-bottom: 0.6rem;
-    }
-
-    .work-card-body p {
-      font-size: 0.88rem;
-      color: var(--charcoal-light);
-      line-height: 1.7;
-    }
-
-    .work-card-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      font-size: 0.82rem;
-      font-weight: 500;
-      color: var(--terracotta);
-      text-decoration: none;
-      margin-top: 0.8rem;
-      transition: gap 0.3s;
-    }
-
-    .work-card-link:hover { gap: 0.7rem; }
-    .work-card-link svg { width: 14px; height: 14px; }
 
     /* IMPACT NUMBERS */
     .impact {
@@ -519,7 +509,7 @@
       }
       .hero-photo .photo-frame { width: 240px; height: 300px; }
       .about-grid { grid-template-columns: 1fr; }
-      .work-grid { grid-template-columns: 1fr; }
+      .work-grid { grid-template-columns: 1fr 1fr; }
       .impact-grid { grid-template-columns: 1fr 1fr; }
       .logo-bar { gap: 2rem 2.5rem; }
       .logo-bar img { height: 55px; }
@@ -546,6 +536,7 @@
       .impact-grid { grid-template-columns: 1fr 1fr; gap: 1rem; }
       .impact-stat .number { font-size: 2.2rem; }
       .footer-links { flex-direction: column; align-items: center; }
+      .work-grid { grid-template-columns: 1fr; }
       .logo-bar { gap: 1.5rem 2rem; }
       .logo-bar img { height: 45px; }
     }
@@ -618,38 +609,124 @@
       <h2 class="section-heading">Selected creative</h2>
       <div class="work-grid">
 
-        <a href="https://michaelharkins.slateapp.com/showreel/view/5ec831bbeb48d" target="_blank" rel="noopener" class="work-card" style="text-decoration:none; color:inherit;">
+        <a href="https://www.youtube.com/watch?v=htiazvyO8nM" target="_blank" rel="noopener" class="work-card" style="text-decoration:none;color:inherit;">
           <div class="work-card-visual">
-            <img src="images/showreel-harkins.png" alt="City of Hope campaign still" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;">
-            <div class="overlay">
-              <div class="play-btn">
-                <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"></polygon></svg>
-              </div>
-            </div>
+            <img src="https://img.youtube.com/vi/htiazvyO8nM/maxresdefault.jpg" alt="Hope Is Here: Expert Cancer Care at City of Hope">
+            <div class="overlay"><div class="play-btn"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"></polygon></svg></div></div>
           </div>
-          <div class="work-card-body">
-            <div class="card-role">Director's Reel — Michael Harkins</div>
-            <h3>City of Hope &amp; CTCA Campaigns</h3>
-            <p>National TV spots including "Hope Is Here," "One Call," and "Driven" — produced through the in-house Health Studios team.</p>
-            <span class="work-card-link">Watch reel <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span>
-          </div>
+          <div class="work-card-caption">Hope Is Here: Expert Cancer Care at City of Hope</div>
         </a>
 
-        <a href="https://www.matthamill.com/" target="_blank" rel="noopener" class="work-card" style="text-decoration:none; color:inherit;">
+        <a href="https://www.youtube.com/watch?v=hG5ipnaef1w" target="_blank" rel="noopener" class="work-card" style="text-decoration:none;color:inherit;">
           <div class="work-card-visual">
-            <img src="images/showreel-hamill.png" alt="Walk for Hope 2025" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;">
-            <div class="overlay">
-              <div class="play-btn">
-                <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"></polygon></svg>
-              </div>
-            </div>
+            <img src="https://img.youtube.com/vi/hG5ipnaef1w/maxresdefault.jpg" alt="COH About Us">
+            <div class="overlay"><div class="play-btn"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"></polygon></svg></div></div>
           </div>
-          <div class="work-card-body">
-            <div class="card-role">Producer/Editor — Matt Hamill</div>
-            <h3>City of Hope Brand Films</h3>
-            <p>"Driven," "This is City of Hope," patient stories, and Walk for Hope — editorial and documentary content produced in-house.</p>
-            <span class="work-card-link">View work <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span>
+          <div class="work-card-caption">COH About Us</div>
+        </a>
+
+        <a href="https://www.youtube.com/watch?v=BFUvkW1FN7Y" target="_blank" rel="noopener" class="work-card" style="text-decoration:none;color:inherit;">
+          <div class="work-card-visual">
+            <img src="https://img.youtube.com/vi/BFUvkW1FN7Y/maxresdefault.jpg" alt="The Power of Nanobodies to Fight Cancer">
+            <div class="overlay"><div class="play-btn"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"></polygon></svg></div></div>
           </div>
+          <div class="work-card-caption">The Power of Nanobodies to Fight Cancer</div>
+        </a>
+
+        <a href="https://www.youtube.com/watch?v=SuENQbtat08" target="_blank" rel="noopener" class="work-card" style="text-decoration:none;color:inherit;">
+          <div class="work-card-visual">
+            <img src="https://img.youtube.com/vi/SuENQbtat08/maxresdefault.jpg" alt="Hope Is Here: Chicago Hyperlocal">
+            <div class="overlay"><div class="play-btn"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"></polygon></svg></div></div>
+          </div>
+          <div class="work-card-caption">Hope Is Here: Chicago Hyperlocal</div>
+        </a>
+
+        <a href="https://www.youtube.com/watch?v=BeA1uRECPbU" target="_blank" rel="noopener" class="work-card" style="text-decoration:none;color:inherit;">
+          <div class="work-card-visual">
+            <img src="https://img.youtube.com/vi/BeA1uRECPbU/maxresdefault.jpg" alt="Hope Is Here: Phoenix Blood Cancer">
+            <div class="overlay"><div class="play-btn"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"></polygon></svg></div></div>
+          </div>
+          <div class="work-card-caption">Hope Is Here: Phoenix Blood Cancer</div>
+        </a>
+
+        <a href="https://www.youtube.com/watch?v=bWXnopwHXv8" target="_blank" rel="noopener" class="work-card" style="text-decoration:none;color:inherit;">
+          <div class="work-card-visual">
+            <img src="https://img.youtube.com/vi/bWXnopwHXv8/maxresdefault.jpg" alt="Cancer Treatment Centers of America Is Now City of Hope">
+            <div class="overlay"><div class="play-btn"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"></polygon></svg></div></div>
+          </div>
+          <div class="work-card-caption">Cancer Treatment Centers of America Is Now City of Hope</div>
+        </a>
+
+        <a href="https://www.youtube.com/watch?v=aJcFSAO7N-I" target="_blank" rel="noopener" class="work-card" style="text-decoration:none;color:inherit;">
+          <div class="work-card-visual">
+            <img src="https://img.youtube.com/vi/aJcFSAO7N-I/maxresdefault.jpg" alt="One Call Anthem">
+            <div class="overlay"><div class="play-btn"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"></polygon></svg></div></div>
+          </div>
+          <div class="work-card-caption">One Call Anthem</div>
+        </a>
+
+        <a href="https://www.youtube.com/watch?v=rhgrvfDwwas" target="_blank" rel="noopener" class="work-card" style="text-decoration:none;color:inherit;">
+          <div class="work-card-visual">
+            <img src="https://img.youtube.com/vi/rhgrvfDwwas/maxresdefault.jpg" alt="One Call Campaign">
+            <div class="overlay"><div class="play-btn"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"></polygon></svg></div></div>
+          </div>
+          <div class="work-card-caption">One Call Campaign</div>
+        </a>
+
+        <a href="https://www.youtube.com/watch?v=D3N3QFkjjX4" target="_blank" rel="noopener" class="work-card" style="text-decoration:none;color:inherit;">
+          <div class="work-card-visual">
+            <img src="https://img.youtube.com/vi/D3N3QFkjjX4/maxresdefault.jpg" alt="Care Like No Other Anthem">
+            <div class="overlay"><div class="play-btn"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"></polygon></svg></div></div>
+          </div>
+          <div class="work-card-caption">Care Like No Other Anthem</div>
+        </a>
+
+        <a href="https://www.youtube.com/watch?v=JraI3vL-cxI" target="_blank" rel="noopener" class="work-card" style="text-decoration:none;color:inherit;">
+          <div class="work-card-visual">
+            <img src="https://img.youtube.com/vi/JraI3vL-cxI/maxresdefault.jpg" alt="Care Like No Other Phoenix">
+            <div class="overlay"><div class="play-btn"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"></polygon></svg></div></div>
+          </div>
+          <div class="work-card-caption">Care Like No Other Phoenix</div>
+        </a>
+
+        <a href="https://www.youtube.com/watch?v=-sUgl32fpSQ" target="_blank" rel="noopener" class="work-card" style="text-decoration:none;color:inherit;">
+          <div class="work-card-visual">
+            <img src="https://img.youtube.com/vi/-sUgl32fpSQ/maxresdefault.jpg" alt="Patient Testimonial">
+            <div class="overlay"><div class="play-btn"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"></polygon></svg></div></div>
+          </div>
+          <div class="work-card-caption">Patient Testimonial</div>
+        </a>
+
+        <a href="https://www.youtube.com/watch?v=cNGBeBc0BAs" target="_blank" rel="noopener" class="work-card" style="text-decoration:none;color:inherit;">
+          <div class="work-card-visual">
+            <img src="https://img.youtube.com/vi/cNGBeBc0BAs/maxresdefault.jpg" alt="Atlanta Women's Center Service Line">
+            <div class="overlay"><div class="play-btn"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"></polygon></svg></div></div>
+          </div>
+          <div class="work-card-caption">Atlanta Women's Center Service Line</div>
+        </a>
+
+        <a href="https://www.youtube.com/watch?v=InfxNl9PW38" target="_blank" rel="noopener" class="work-card" style="text-decoration:none;color:inherit;">
+          <div class="work-card-visual">
+            <img src="https://img.youtube.com/vi/InfxNl9PW38/maxresdefault.jpg" alt="Mother Standard of Care Anthem">
+            <div class="overlay"><div class="play-btn"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"></polygon></svg></div></div>
+          </div>
+          <div class="work-card-caption">Mother Standard of Care Anthem</div>
+        </a>
+
+        <a href="https://www.youtube.com/watch?v=Kg6NmxjRXwI" target="_blank" rel="noopener" class="work-card" style="text-decoration:none;color:inherit;">
+          <div class="work-card-visual">
+            <img src="https://img.youtube.com/vi/Kg6NmxjRXwI/maxresdefault.jpg" alt="Mother Standard of Care Campaign Quality of Life">
+            <div class="overlay"><div class="play-btn"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"></polygon></svg></div></div>
+          </div>
+          <div class="work-card-caption">Mother Standard of Care Campaign Quality of Life</div>
+        </a>
+
+        <a href="https://www.youtube.com/watch?v=XDK9mST19tU" target="_blank" rel="noopener" class="work-card" style="text-decoration:none;color:inherit;">
+          <div class="work-card-visual">
+            <img src="https://img.youtube.com/vi/XDK9mST19tU/maxresdefault.jpg" alt="Mother Standard of Care Patient Experience">
+            <div class="overlay"><div class="play-btn"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"></polygon></svg></div></div>
+          </div>
+          <div class="work-card-caption">Mother Standard of Care Patient Experience</div>
         </a>
 
       </div>
